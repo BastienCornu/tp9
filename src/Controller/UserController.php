@@ -13,7 +13,7 @@ class UserController extends Controller
 {
     /**
      * @Route(
-     *     path="",
+     *     path="/",
      *     name="user_index"
      * )
      */

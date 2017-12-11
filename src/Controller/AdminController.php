@@ -13,7 +13,7 @@ class AdminController extends Controller
 {
     /**
      * @Route(
-     *     path="",
+     *     path="/",
      *     name="admin_index"
      * )
      */

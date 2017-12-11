@@ -27,6 +27,8 @@ class Card
      */
     private $visible = false;
 
+
+
     /**
      * @return mixed
      */
