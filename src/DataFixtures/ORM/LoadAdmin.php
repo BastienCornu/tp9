@@ -14,10 +14,10 @@ class LoadAdmin extends Fixture
     {
         $admin = new User();
 
-        $admin->setFirstname('Admin');
-        $admin->setLastname('Admin');
+        /*$admin->setFirstname('Admin');
+        $admin->setLastname('Admin');*/
         $admin->setEmail('admin@admin.fr');
-        $admin->setBirthday(new \DateTime('2015/12/01'));
+        //$admin->setBirthday(new \DateTime('2015/12/01'));
         $admin->setIsAdmin(true);
 
         $password = $this->container->get('security.password_encoder')->encodePassword($admin, self::ADMIN_PASSWORD);

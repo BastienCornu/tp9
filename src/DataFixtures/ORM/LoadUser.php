@@ -14,7 +14,7 @@ class LoadUser extends Fixture
     {
         $user = new User();
         $user->setEmail('user@user.fr');
-        $user->setBirthday(new \DateTime('2000/01/01'));
+        //$user->setBirthday(new \DateTime('2000/01/01'));
         $password = $this->container->get('security.password_encoder')->encodePassword($user, self::USER_PASSWORD);
         $user->setPassword($password);
         $manager->persist($user);
@@ -22,14 +22,14 @@ class LoadUser extends Fixture
 
         $user = new User();
         $user->setEmail('user1@user.fr');
-        $user->setBirthday(new \DateTime('2000/01/01'));
+        //$user->setBirthday(new \DateTime('2000/01/01'));
         $password = $this->container->get('security.password_encoder')->encodePassword($user, self::USER_PASSWORD);
         $user->setPassword($password);
         $manager->persist($user);
 
         $user = new User();
         $user->setEmail('user2@user.fr');
-        $user->setBirthday(new \DateTime('2000/01/01'));
+        //$user->setBirthday(new \DateTime('2000/01/01'));
         $password = $this->container->get('security.password_encoder')->encodePassword($user, self::USER_PASSWORD);
         $user->setPassword($password);
         $manager->persist($user);
